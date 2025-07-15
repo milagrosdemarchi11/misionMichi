@@ -38,7 +38,7 @@ class menu extends Phaser.Scene {
         ).setOrigin(0.5).setScale(1.5).setInteractive();
 
         startButton.on('pointerdown', () => {
-            this.scene.start('hello-world');
+            this.scene.start('juego1');
         });
 
         startButton.on('pointerover', () => {
