@@ -1,6 +1,7 @@
 import menu from "./scenes/menu.js";
 import juego1 from "./scenes/juego1.js";
 import juego2 from "./scenes/juego2.js";
+import juego3 from "./scenes/juego3.js";
 
 // Create a new Phaser config object
 const config = {
@@ -35,7 +36,7 @@ const config = {
   // List of scenes to load
   // Only the first scene will be shown
   // Remember to import the scene before adding it to the list
-  scene: [menu, juego1, juego2],
+  scene: [menu, juego1, juego2, juego3],
 };
 
 // Create a new Phaser game instance
