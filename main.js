@@ -3,26 +3,32 @@ import menu from "./scenes/menu.js";
 // Create a new Phaser config object
 const config = {
   type: Phaser.AUTO,
-  width: 720,
-  height: 720,
+  width: 1920,
+  height: 1080,
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
     min: {
-      width: 800,
-      height: 600,
+      width: window.innerWidth,
+      height: window.innerHeight,
     },
     max: {
-      width: 1600,
-      height: 1200,
+      width: 1920,
+      height: 1080,
     },
   },
   physics: {
     default: "arcade",
     arcade: {
       gravity: { y: 200 },
-      debug: true,
+      debug: false,
     },
+  },
+  render:
+  {
+    pixelArt: true,
+    antialias: false,
+    roundPixels: true,
   },
   // List of scenes to load
   // Only the first scene will be shown
